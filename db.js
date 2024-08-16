@@ -1,7 +1,6 @@
 // db.js
 
 const express = require('express');
-// const sql = require('mssql');
 const sql = require('mssql');
 const cors = require('cors');
 
@@ -15,7 +14,7 @@ app.use(express.json()); // Middleware to parse JSON bodies
 // Configure database connection
 // const config = {
 //   user: 'co-op-login',
-//   password: 'Kiret#444',
+//   password: '',
 //   server: 'co-op-db-oberoik.database.windows.net', // You can use 'localhost\\instance' to connect to named instance
 //   database: 'Pubs',
 //   options: {
@@ -32,7 +31,7 @@ const config = {
   options: {
       trustServerCertificate: true,
       encrypt: true,
-enableArithAbort: true,
+      enableArithAbort: true,
   }
 };
 
@@ -50,7 +49,6 @@ enableArithAbort: true,
 
 
 
-//  qaNk2hRFs7NrndD
  
 // Driver={ODBC Driver 18 for SQL Server};
 //Server=tcp:co-op-db-wang.database.windows.net,1433;Database=pubs;
